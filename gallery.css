@@ -1,0 +1,511 @@
+/* font p */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=The+Nautigal:wght@700&display=swap');
+
+/* Board writing font h1 */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+
+/* Calligraphy font h1 */
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+/* Glass painting font h1 */
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
+
+/*Gold gilding font h1 */
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
+
+/* Lettering font h1 */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+}
+
+/* Wood carving h1 */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+/* Zentangle font h1 */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+/* Home font h1 */
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+/* How it's made font h1 */
+@import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+
+:root{
+--shadow-letter: black;
+}
+
+
+body,html{
+    height: auto;
+    width: auto;
+   }
+
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;  
+}
+
+p{
+  margin: auto;
+  padding: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+ 
+}
+
+
+#glass-back{
+    background-image: url('/storage/emulated/0/MAREK/Background/glass-back.jpg');
+    background-attachment:fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+#gold-back{
+    background-image: url('/storage/emulated/0/MAREK/Background/back9.jpg');
+    background-attachment:fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#board-back{
+    background-image: url('/storage/emulated/0/MAREK/Background/back7.jpg');
+    background-attachment:fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#calli-back{
+    background-image: url('/storage/emulated/0/MAREK/Background/calli-back.jpg');
+    background-attachment:fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#home-back{
+    background-image: url('/storage/emulated/0/MAREK/Background/back5.jpg');
+    background-attachment:fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#how-back{
+    background-image: url('/storage/emulated/0/MAREK/Background/how-back.jpg');
+    background-attachment:fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#letter-back{
+    background-image: url('/storage/emulated/0/MAREK/Background/letter-back.jpg');
+    background-attachment:fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#wood-back{
+    background-image: url('/storage/emulated/0/MAREK/Background/wood-back.jpg');
+    background-attachment:fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+#zentangle-back{
+    background-image: url('/storage/emulated/0/MAREK/Background/zentangle-back.jpg');
+    background-attachment:fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 410px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: transparent;
+  z-index: 1;
+}
+
+nav > .art-zem{
+    display: block;
+    position: absolute;
+    top: 0%;
+    left:25%;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-family: 'The Nautigal', cursive;
+}
+
+nav {
+  background-color: #eaeaff;
+  height: 50px;
+  padding: 0 20px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  text-align: right;
+  z-index: 100;
+}
+
+nav .m-menu__checkbox {
+  display: none;
+}
+nav label.m-menu__toggle {
+  cursor: pointer;
+}
+nav .m-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 450px;
+  width: calc(70vw - 30px);
+  height: 100%;
+  -moz-transform: translate3d(-450px, 0, 0);
+  -o-transform: translate3d(-450px, 0, 0);
+  -ms-transform: translate3d(-450px, 0, 0);
+  -webkit-transform: translate3d(-450px, 0, 0);
+  transform: translate3d(-450px, 0, 0);
+  -moz-transition: transform 0.35s;
+  -o-transition: transform 0.35s;
+  -webkit-transition: transform 0.35s;
+  transition: transform 0.35s;
+  z-index: 150;
+  overflow: hidden;
+  background-color: #eaeaff;
+  
+}
+
+
+nav .m-menu__header {
+  padding: 0 16px;
+  height: 50px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-align-items: center;
+  align-items: center;
+  border-bottom: 1px solid #e8e8e8;
+  z-index: 3;
+}
+
+nav .m-menu__header span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  }
+
+nav .m-menu .m-menu {
+  -moz-transform: translate3d(480px, 0, 0);
+  -o-transform: translate3d(480px, 0, 0);
+  -ms-transform: translate3d(480px, 0, 0);
+  -webkit-transform: translate3d(480px, 0, 0);
+  transform: translate3d(480px, 0, 0);
+}
+nav .m-menu ul {
+  height: 100%;
+  overflow-y: auto;
+  list-style-type: none;
+  
+}
+
+nav .m-menu ul li a, nav .m-menu ul li label { 
+  display: block; 
+  text-align: center;  
+  line-height: 45px; 
+  text-decoration: none; 
+  color: black; 
+  cursor: pointer;
+  font-size: 1.2rem; 
+  position: relative;
+  z-index: 100;
+  } 
+  
+  nav .m-menu ul li label.a-label-right::after { 
+  content: ""; 
+  position: absolute;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-color: #333;
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 50%;
+  margin-top: -5px;
+  right: 16px;  
+}
+nav .m-menu ul li .-invisible {
+  border-bottom: 0;  
+}
+
+nav .m-menu .m-menu label.m-menu__toggle {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  border-bottom: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  
+}
+
+nav .m-menu__checkbox:checked ~ .m-menu__overlay {
+  display: block;
+ }
+ 
+nav .m-menu__checkbox:checked ~ .m-menu {
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+
+
+@media(min-height: 435px){
+    .wrapper{
+        float: left;
+    }
+}
+
+
+/* Fonts h1 */
+
+#cali-h1{
+    font-family: 'Tangerine';
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 100px;
+}
+
+
+#letter-h1{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 90px;
+    color: #47314a;
+    }
+
+#board-h1{
+    font-family: 'Fredericka the Great', bolt;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 70px;
+    color:white;
+    }
+
+#glass-h1{
+    font-family: 'Glass Antiqua', cursive;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 70px;
+    color:white; 
+}
+
+#gold-h1{
+    font-family: 'Goldman', cursive;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 70px;
+    color:white; 
+}
+
+#home-h1{
+    font-family: 'Rye', cursive;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 60px;
+    color: #000;
+    
+} 
+
+#home-h2{
+    font-family: 'Sonsie One', cursive;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+    
+}    
+
+#how-h1{
+    font-family: 'Sonsie One', cursive;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 50px;
+    color: #000;
+    backdrop-filter: blur(2px);
+}   
+
+
+
+#wood-h1{
+    font-family: 'MedievalSharp', cursive;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 60px;
+    color: #FFFFFF;
+}   
+
+#zentangle-h1{
+    font-family: 'Bungee', cursive;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 80px;
+    color: #000;
+    backdrop-filter: blur(2px);
+}   
+
+#quilling-h1{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 90px;
+    color: #47314a;
+}
+
+
+/* Fonts p */
+
+#board-p{
+    font-family: 'Fredericka the Great', bolt;
+    font-size: 19px;
+    color: white;
+}
+
+#cali-p{
+    backdrop-filter: blur(3px);
+}
+
+#glass-p{
+    font-size: 19px;
+    color: white;
+    backdrop-filter: blur(3px);
+}
+
+#gold-p{
+   color: #FFFFFF;
+   backdrop-filter:blur(2px);
+}
+
+#letter-p{
+    font-size: 19px;
+    color: black;
+    backdrop-filter: blur(3px);
+}
+
+#wood-p{
+    font-size: 19px;
+    color: white;
+    backdrop-filter: blur(1px);
+}
+
+#zentangle-p{
+    font-size: 19px;
+    color: #FFFFFF;
+    backdrop-filter: blur(3px);
+}
+
+
+
+@media(min-width: 768px){
+    p{
+        font-size: 15px;
+    }
+}
+
+
+.gallery {
+  margin:1rem;
+}
+
+.gallery > div {
+  columns:3;
+  gap:1.25rem;
+  padding-top:1.25rem;
+  
+}
+
+
+
+.gallery img {
+  display:block;
+  width:100%;
+  margin-bottom:20px;
+  border: 5px solid black;
+  border-radius:10px;
+}
+
+
+
+@media (max-width:48rem) {
+ .gallery > div {
+   columns:2;
+  } 
+}
+
+@media (max-width:32rem) {
+ .gallery > div {
+   columns:1;
+  }
+}
+
+
+#home-video{
+    display: block; 
+    margin: 0 auto;
+    width:100%;
+}
+
+
